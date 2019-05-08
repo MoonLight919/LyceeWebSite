@@ -15,11 +15,8 @@ $(function(){
         $('#rightMenuSide').toggleClass('rightMenuSideOpen');
     });
     $('.searchButton').click((e) =>{
-        //console.log(e.target);
-        
         let pair = $(e.target).attr("data-pair");
         let input = $(".floatingInput[data-pair = " + pair + "]");
-        //console.log(input);
         let marIn = pair == 1 ? 435 : 300;
         let marBut = pair == 1 ? 390 : 300;
         if($(e.target).attr("data-expanded") == "0"){
@@ -105,4 +102,58 @@ $(function(){
         else
             firstTime = false;
     });
+    let oldWindowWidth = window.innerWidth; 
+    function onWindowResize() {
+        let size1, size2, cnt;
+        if(window.innerWidth <= 1200){
+           if(window.innerWidth >= 768){
+                size1 = "offset-sm-2 col-sm-3";
+                size2 = "offset-sm-2 col-sm-3";
+                cnt = 2;
+           }
+           else{
+                size1 = "offset-sm-3 col-sm-6";
+                //size2 = "offset-sm-1 col-sm-2";
+                cnt = 1;
+           }
+        }
+        else{
+            size1 = "offset-sm-2 col-sm-2";
+            size2 = "offset-sm-1 col-sm-2";
+            cnt = 3;
+        }
+        console.log(cnt);
+        let arr = $('.car-item');
+        let classes, row, elem, elemOuter;
+        let parent = $('#myCar');
+        $(parent).empty();
+        for (let i = 0; i < arr.length;) {
+            classes = i == 0 ? 
+                "carousel-item active row" : 
+                "carousel-item row";
+            row = $('<div/>', {
+                "class" : classes,
+                "data-interval" : "6000"
+            });
+            elemOuter = $('<div/>', {
+                "class" : "d-flex flex-row"
+            });
+            for (let j = i; j < i + cnt; j++) {
+                classes = j == i ? size1 : size2;
+                elem = $('<div/>', {
+                    "class" : classes
+                });
+                $(elem).append(arr[j]);
+                $(elemOuter).append(elem);
+                $(row).append(elemOuter);
+            }
+            $(row).append(elemOuter);
+            $(parent).append(row);
+            //console.dir(row);
+            i += cnt;
+        }
+       oldWindowWidth = window.innerWidth; 
+    };
+    $(window).resize(onWindowResize);
+    onWindowResize();
 })
