@@ -15,7 +15,8 @@ section{
     background-size: cover;
 }
 #section1{
-    background-image: url(https://img.lookmytrips.com/images/look77nd/570bb5e1ff936715e9074252-5aaebdfb6c4cf-1datffr-lbcvr.jpg);
+    background: url(https://img.lookmytrips.com/images/look77nd/570bb5e1ff936715e9074252-5aaebdfb6c4cf-1datffr-lbcvr.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 #section2{
     min-height: 1000px;
