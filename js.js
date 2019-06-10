@@ -16,18 +16,20 @@ $(function(){
     });
     $('.searchButton').click((e) =>{
         let pair = $(e.target).attr("data-pair");
-        let input = $(".floatingInput[data-pair = " + pair + "]");
-        let marIn = pair == 1 ? 435 : 300;
-        let marBut = pair == 1 ? 390 : 300;
+        let parent = $(e.target).parent();
         if($(e.target).attr("data-expanded") == "0"){
-            $(input).css('left', 'calc(100% - ' + marIn + 'px)');
-            $(e.target).css('margin-right', marBut);
             $(e.target).attr("data-expanded", "1");
+            $(parent).toggleClass('searchExpanded' + pair);
+            $(parent).toggleClass('searchCollapsed');
+            if(window.innerWidth <= 720 && pair == 1)
+                $('#logo-text').toggleClass('blurred-logo');
         }
         else{
-            $(input).css('left', 'calc(100%)');
-            $(e.target).css('margin-right', '0');
             $(e.target).attr("data-expanded", "0");
+            $(parent).toggleClass('searchCollapsed');
+            $(parent).toggleClass('searchExpanded' + pair);
+            if(window.innerWidth <= 720 && pair == 1)
+                $('#logo-text').toggleClass('blurred-logo');
         }
     });
     let oldw, oldh, oldl, oldt, firstTime;
@@ -65,6 +67,8 @@ $(function(){
 		$(this).promise().then(function() {
 			$(this).css({
                 'box-shadow': '0px 0px 0px 9999px rgba(0, 0, 0, 0.6)',
+                // 'transition' : '.6s filter',
+                // 'filter': 'blur(5px)'
 			});
         });
         $(this).addClass('opened-card')
@@ -122,7 +126,7 @@ $(function(){
             size2 = "offset-sm-1 col-sm-2";
             cnt = 3;
         }
-        console.log(cnt);
+
         let arr = $('.car-item');
         let classes, row, elem, elemOuter;
         let parent = $('#myCar');

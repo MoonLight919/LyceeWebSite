@@ -17,12 +17,12 @@
 </head>
 <body>
     <header id="top" class="background-color-teal animation1">
-        <div class="logo-text animation1 text-color-white">Ліцей #142</div>
-        <div class="top-menu margin-right-for-search">
+        <div id="logo-text" class="animation1 text-color-white">Ліцей #142</div>
+        <div class="d-flex align-items-center margin-right-for-search searchCollapsed">
             <i class="fas fa-angle-down menuAngle" id="menuAngleOpen"></i>
             <div class="margin-right-for-search text-color-white" id="menuButtonInner">Меню</div>
             <i class="fas fa-search searchButton" data-expanded="0" data-pair="1"></i>
-            <input type="text" placeholder="What are you looking for?" class="searchInput floatingInput" data-pair="1">
+            <input type="text" placeholder="Що шукаємо?" class="searchInput floatingInput" data-pair="1">
         </div>
     </header>
     <div id="left" class="background-color-teal"></div>
@@ -32,11 +32,13 @@
         
     </div>
     <div id="rightMenuSide">
-        <div class="rightSideMenuHeader">
-            <i class="fas fa-angle-up menuAngle"  id="menuAngleClose"></i>
-            <div class="margin-right-for-search text-color-white" id="menuButtonOuter">Сховати</div>
-            <i class="fas fa-search searchButton" data-expanded="0" data-pair="2"></i>
-            <input type="text" placeholder="What are you looking for?" class="searchInput floatingInput" data-pair="2">
+        <div class="rightSideMenuHeader searchCollapsed">
+            <div class="d-flex align-items-center margin-right-for-search">
+                <i class="fas fa-angle-up menuAngle"  id="menuAngleClose"></i>
+                <div class="text-color-white margin-right-for-search" id="menuButtonOuter">Сховати</div>
+                <i class="fas fa-search searchButton" data-expanded="0" data-pair="2"></i>
+                <input type="text" placeholder="Що шукаємо?" class="searchInput floatingInput" data-pair="2">
+            </div>
         </div>
     </div>
     <section id="section1">
@@ -67,7 +69,7 @@
                 </div>
             </div>
             <div id="item2" class="item">
-                <p class="text-64 text-color-teal header-section2">Щорічно, наш ліцей - це:</p>
+                <p  id="header-section2" class="text-64 text-color-teal">Щорічно, наш ліцей - це:</p>
                 <div class="achievements">
                     <div class="button">
                         <div class="w-100 h-100 with-border">

@@ -1,5 +1,3 @@
-
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 1px){
     #cont{
 		width: 80%;
@@ -60,13 +58,16 @@
         min-height: 1500px;
     }
     .margin-right-for-search{
-        margin-right: 0;
+        margin-right: 10px;
+    }
+    #logo-text{
+        margin-left: 10px;
     }
     .text-24{
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
     .text-18{
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
     .img-128{
         width: 120px;
@@ -81,9 +82,12 @@
     .p-about-kpi{
         width: calc(60%);
     }
-    .logo-text{
+    #logo-text{
         margin-left: 10px;
-        font-size: 35px;
+        font-size: 28px;
+    }
+    .top-down #logo-text{
+        font-size: 28px;
     }
     /* #leftMenuSide{
         width: 100%;
@@ -94,40 +98,29 @@
         right: 100%;
     } */
     #menuButtonInner{
-        font-size: 18px;
+        font-size: 16px;
     }
     .searchButton{
-        width: 18px;
-        height: 18px;
+        font-size: 16px;
     }
-}
-@media (min-width: 576px) 
-{ 
-    section{
-        background: red;
+    .searchInput{
+        font-size: 16px;
+        width: 150px;
     }
-    .margin-right-for-search{
-        margin-right: 35px;
+    #rightMenuSide .searchInput{
+        font-size: 16px;
     }
-    .logo-text{
-        margin-left: 10px;
-        font-size: 40px;
+    .searchExpanded1 .searchButton{
+        margin-right: 170px;
     }
-    #leftMenuSide{
-        width: 40%;
+    .searchExpanded1 input{
+        left: calc(100% - 175px);
     }
-    #rightMenuSide{
-        width: 60%;
+    .searchExpanded2 .searchButton{
+        margin-right: 150px;
     }
-}
-
-@media (min-width: 720px) 
-{
-	section{
-		background: aqua;
-    }
-    .logo-text{
-        margin-left: 45px;
+    .searchExpanded2 input{
+        left: calc(100% - 160px);
     }
     #leftMenuSide{
         top: calc(50%);
@@ -141,11 +134,110 @@
         height: 50%;
     }
     #menuButtonInner{
-        font-size: 25px;
+        font-size: 16px;
     }
-    .searchButton{
-        width: 25px;
-        height: 25px;
+    .text-64{
+        font-size: 40px !important;
+    }
+    #item6 .text-64,
+    #header-section2{
+        font-size: 28px !important;
+    }
+    .achievements .img-128{
+        width: 100px;
+        height: 100px;
+    }
+    header .searchButton{
+        display: none;
+    }
+    .achievements :nth-child(2){
+        display: none;
+    }
+}
+@media (min-width: 390px) {
+    .top-down #logo-text {
+        font-size: 28px;
+    }
+    #logo-text {
+        margin-left: 10px;
+        font-size: 28px;
+    }
+    .searchExpanded1 .searchButton{
+        margin-right: 170px;
+    }
+    .searchExpanded1 input{
+        left: calc(100% - 175px);
+    }
+    .searchExpanded2 .searchButton{
+        margin-right: 180px;
+    }
+    .searchExpanded2 input{
+        left: calc(100% - 190px);
+    }
+    header .searchButton{
+        display: inline-block;
+    }
+    .achievements :nth-child(2){
+        display: flex;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) 
+{ 
+    .achievements .img-128{
+        width: 128px;
+        height: 128px;
+    }
+    section{
+        background: red;
+    }
+    .margin-right-for-search{
+        margin-right: 20px;
+    }
+    #logo-text{
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    .top-down #logo-text{
+        font-size: 35px;
+    }
+    #top .searchInput{
+        font-size: 20px;
+        width: 250px;
+    }
+    /* #leftMenuSide{
+        width: 40%;
+    }
+    #rightMenuSide{
+        width: 60%;
+    } */
+    .searchExpanded1 .searchButton{
+        margin-right: 270px;
+    }
+    .searchExpanded1 input{
+        left: calc(100% - 275px);
+    }
+    .text-24{
+        font-size: 24px !important;
+    }
+    .text-18{
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 720px) 
+{
+	section{
+		background: aqua;
+    }
+    .margin-right-for-search{
+        margin-right: 35px;
+    }
+    #logo-text{
+        margin-left: 20px;
+    }
+    .text-64{
+        font-size: 48px !important;
     }
 }
 
@@ -160,7 +252,7 @@
         grid-template-rows: repeat(5, 1fr);
 		grid-template-columns: repeat(8, 1fr);
     }
-    .header-section2{
+    #header-section2{
         font-size: 28px !important;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -216,13 +308,7 @@
         display: flex;
     }
     #section2{
-        min-height: 1000px;
-    }
-    .margin-right-for-search{
-        margin-right: 40px;
-    }
-    .logo-text{
-        margin-left: 90px;
+        min-height: 1100px;
     }
     #leftMenuSide{
         top: 0;
@@ -238,6 +324,15 @@
     #section3{
         height: 575px;
     }
+    #top .searchInput{
+        font-size: 20px;
+    }
+    .text-24{
+        font-size: 20px !important;
+    }
+    .text-18{
+        font-size: 16px !important;
+    }
 }
 
  /* Large devices (desktops, 992px and up) */
@@ -249,13 +344,16 @@
     #cont{
 		width: 87.5%;
     }
-    .header-section2{
+    #header-section2{
         font-size: 32px !important;
         padding-top: 15px;
         padding-bottom: 15px;
     }
     .margin-right-for-search{
-        margin-right: 75px;
+        margin-right: 40px;
+    }
+    #logo-text{
+        margin-left: 40px;
     }
     .section3{
         height: 400px;
@@ -266,6 +364,30 @@
     .p-about-kpi{
         width: calc(33%);
     }
+    #top .searchInput{
+        font-size: 20px;
+    }
+    .searchExpanded1 .searchButton{
+        margin-right: 325px;
+    }
+    .searchExpanded1 input{
+        left: calc(100% - 350px);
+    }
+    .searchExpanded2 .searchButton{
+        margin-right: 300px;
+    }
+    .searchExpanded2 input{
+        left: calc(100% - 330px);
+    }
+    .searchButton{
+        font-size: 25px;
+    }
+    #menuButtonInner{
+        font-size: 25px;
+    }
+    #section3{
+        height: 425px;
+    }
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
@@ -274,17 +396,28 @@
     section{
         background: purple;
     }
-    .text-24{
-        font-size: 24px !important;
-    }
-    .text-18{
-        font-size: 18px !important;
-    }
-    .img-128{
-        width: 128px;
-        height: 128px;
-    }
     #cont{
 		width: 80%;
+    }
+    #top .searchInput{
+        font-size: 25px;
+    }
+    .margin-right-for-search{
+        margin-right: 70px;
+    }
+    #logo-text{
+        margin-left: 70px;
+    }
+    .searchExpanded1 .searchButton{
+        margin-right: 350px;
+    }
+    .searchExpanded1 input{
+        left: calc(100% - 400px);
+    }
+    .searchExpanded2 .searchButton{
+        margin-right: 300px;
+    }
+    .searchExpanded2 input{
+        left: calc(100% - 350px);
     }
 }
