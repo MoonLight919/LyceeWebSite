@@ -133,8 +133,8 @@ $(function(){
         $(parent).empty();
         for (let i = 0; i < arr.length;) {
             classes = i == 0 ? 
-                "carousel-item active row" : 
-                "carousel-item row";
+                "carousel-item active" : 
+                "carousel-item";
             row = $('<div/>', {
                 "class" : classes,
                 "data-interval" : "6000"

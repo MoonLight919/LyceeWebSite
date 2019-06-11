@@ -64,7 +64,7 @@
         margin-left: 10px;
     }
     .text-24{
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
     .text-18{
         font-size: 14px !important;
@@ -137,11 +137,11 @@
         font-size: 16px;
     }
     .text-64{
-        font-size: 40px !important;
+        font-size: 36px !important;
     }
     #item6 .text-64,
     #header-section2{
-        font-size: 28px !important;
+        font-size: 22px !important;
     }
     .achievements .img-128{
         width: 100px;
@@ -150,17 +150,17 @@
     header .searchButton{
         display: none;
     }
-    .achievements :nth-child(2){
+    .achievements div:nth-child(2){
         display: none;
     }
 }
-@media (min-width: 390px) {
+@media (min-width: 370px) {
     .top-down #logo-text {
-        font-size: 28px;
+        font-size: 26px;
     }
     #logo-text {
         margin-left: 10px;
-        font-size: 28px;
+        font-size: 26px;
     }
     .searchExpanded1 .searchButton{
         margin-right: 170px;
@@ -177,8 +177,18 @@
     header .searchButton{
         display: inline-block;
     }
-    .achievements :nth-child(2){
+    .achievements div:nth-child(2){
         display: flex;
+    }
+    #item6 .text-64,
+    #header-section2{
+        font-size: 25px !important;
+    }
+    .text-24{
+        font-size: 16px !important;
+    }
+    .text-64{
+        font-size: 40px !important;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -196,10 +206,10 @@
     }
     #logo-text{
         margin-left: 20px;
-        font-size: 35px;
+        font-size: 34px;
     }
     .top-down #logo-text{
-        font-size: 35px;
+        font-size: 34px;
     }
     #top .searchInput{
         font-size: 20px;
@@ -222,6 +232,10 @@
     }
     .text-18{
         font-size: 18px !important;
+    }
+    #item6 .text-64,
+    #header-section2{
+        font-size: 35px !important;
     }
 }
 
