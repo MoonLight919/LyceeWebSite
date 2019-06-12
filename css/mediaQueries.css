@@ -63,13 +63,13 @@
     #logo-text{
         margin-left: 10px;
     }
-    .text-24{
+    .text-3{
         font-size: 14px !important;
     }
-    .text-18{
+    .text-2{
         font-size: 14px !important;
     }
-    .img-128{
+    .img-1{
         width: 120px;
         height: 120px;
     }
@@ -136,14 +136,14 @@
     #menuButtonInner{
         font-size: 16px;
     }
-    .text-64{
+    .text-4{
         font-size: 36px !important;
     }
-    #item6 .text-64,
+    #item6 .text-4,
     #header-section2{
         font-size: 22px !important;
     }
-    .achievements .img-128{
+    .achievements .img-1{
         width: 100px;
         height: 100px;
     }
@@ -180,21 +180,21 @@
     .achievements div:nth-child(2){
         display: flex;
     }
-    #item6 .text-64,
+    #item6 .text-4,
     #header-section2{
         font-size: 25px !important;
     }
-    .text-24{
+    .text-3{
         font-size: 16px !important;
     }
-    .text-64{
+    .text-4{
         font-size: 40px !important;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) 
 { 
-    .achievements .img-128{
+    .achievements .img-1{
         width: 128px;
         height: 128px;
     }
@@ -227,13 +227,13 @@
     .searchExpanded1 input{
         left: calc(100% - 275px);
     }
-    .text-24{
+    .text-3{
         font-size: 24px !important;
     }
-    .text-18{
+    .text-2{
         font-size: 18px !important;
     }
-    #item6 .text-64,
+    #item6 .text-4,
     #header-section2{
         font-size: 35px !important;
     }
@@ -250,7 +250,7 @@
     #logo-text{
         margin-left: 20px;
     }
-    .text-64{
+    .text-4{
         font-size: 48px !important;
     }
 }
@@ -341,10 +341,10 @@
     #top .searchInput{
         font-size: 20px;
     }
-    .text-24{
+    .text-3{
         font-size: 20px !important;
     }
-    .text-18{
+    .text-2{
         font-size: 16px !important;
     }
 }

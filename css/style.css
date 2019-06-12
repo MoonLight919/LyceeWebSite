@@ -170,19 +170,16 @@ iframe{
 }
 /*#endregion*/
 /*#region Text styles*/
-.text-64{
+.text-4{
     font-size: 48px !important;
 }
-.text-24{
+.text-3{
     font-size: 24px !important;
 }
-.text-32{
-    font-size: 32px !important;
-}
-.text-18{
+.text-2{
     font-size: 18px !important;
 }
-.text-12{
+.text-1{
     font-size: 12px !important;
 }
 /*#endregion#*/
@@ -358,15 +355,15 @@ iframe{
 }
 /*#endregion*/
 /*#region Image styles*/
-.img-180 img{
+.img-3-container img{
     width: 180px;
     height: 180px;
 }
-.img-200{
+.img-2{
     width: 250px;
     height: 150px;
 }
-.img-128{
+.img-1{
     width: 128px;
     height: 128px;
 }
