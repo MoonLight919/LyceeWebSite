@@ -1,4 +1,5 @@
 $(function(){
+    //make header smaller while scroll down
     window.onscroll = function() {
         if ( window.pageYOffset > 100 )
             $('#top').addClass("top-down");
@@ -6,14 +7,19 @@ $(function(){
             $('#top').removeClass("top-down");
     }
 
+    //rotate angle button of menu while hovering
     $('.menuAngle').add('#menuButtonInner').add('#menuButtonOuter').hover(
         () => {$('.menuAngle').css('transform', 'rotateX(180deg)');},
         () =>{$('.menuAngle').css('transform', 'rotateX(0deg)');}
     );
+
+    //open-close menu
     $('#menuAngleOpen').add('#menuButtonInner').add('#menuAngleClose').add('#menuButtonOuter').click(()=>{
         $('#leftMenuSide').toggleClass('leftMenuSideOpen');
         $('#rightMenuSide').toggleClass('rightMenuSideOpen');
     });
+
+    //show search input
     $('.searchButton').click((e) =>{
         let pair = $(e.target).attr("data-pair");
         let parent = $(e.target).parent();
@@ -32,6 +38,8 @@ $(function(){
                 $('#logo-text').toggleClass('blurred-logo');
         }
     });
+
+    //open card
     let oldw, oldh, oldl, oldt, firstTime;
     $('.flip-card').on('click', function(){
         firstTime = true;
@@ -73,6 +81,8 @@ $(function(){
         });
         $(this).addClass('opened-card')
     });
+
+    //close card
     $('section').click(function(e){
         if($(e.target).parents('.opened-card').length == 0 && firstTime == false)
         {
@@ -106,6 +116,8 @@ $(function(){
         else
             firstTime = false;
     });
+
+    //construct carousel
     let oldWindowWidth = window.innerWidth; 
     function onWindowResize() {
         let size1, size2, cnt;
