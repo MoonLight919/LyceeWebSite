@@ -163,6 +163,12 @@
         display: flex;
         flex-direction: column;
     }
+    #footer-links-top .button{
+        margin-top: 10px;
+    }
+    #footer-links-top div:nth-child(1){
+        margin-top: 20px;
+    }
 }
 @media (min-width: 370px) {
     .top-down #logo-text {
@@ -204,6 +210,12 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) 
 { 
+    #footer-links-top .button{
+        margin-top: 0;
+    }
+    #footer-links-top div:nth-child(1){
+        margin-top: 0;
+    }
     .achievements .img-1{
         width: 128px;
         height: 128px;

@@ -195,10 +195,10 @@ h4{
 /*#endregion*/
 /* #region Footer */
 footer{
-    height: 66vh;
     width: 100%;
     position: relative;
     color: white;
+    min-height: 300px;
 }
 footer a{
     color: white;
@@ -239,25 +239,31 @@ footer h4{
     height: 100%;
 }
 #footer-links-bottom a,
-#footer-links-bottom a{
+#footer-links-top a{
     display: block;
     padding: 10px;
     border: 1px solid white;
     text-align: center;
 }
 #footer-links-bottom div :hover,
-#footer-links-bottom div :hover{
+#footer-links-top div :hover{
     text-decoration: none;
+    color: white;
     border-color: white !important;
 }
 /* #contacts{
     background-color: #77B3D4;
 } */
-#helpfulLinks{
+/* #helpfulLinks{
     background-color: #C75C5C;
+} */
+#helpfulLinks a{
+    display: block;
+    margin: 10px;
 }
-#aboutShort{
-    
+#helpfulLinks a:hover{
+    text-decoration: none;
+    color: #71BE46;
 }
 #footer-links-top{
     justify-content: space-around;
