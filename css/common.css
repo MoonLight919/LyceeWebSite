@@ -89,6 +89,15 @@
 .text-1{
     font-size: 12px !important;
 }
+h3{
+    text-align: center;
+}
+h4{
+    text-decoration: solid;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 /*#endregion#*/
 /*#region Header styles*/
 .blurred-logo{ 
@@ -184,6 +193,82 @@
     color: whitesmoke;
 }
 /*#endregion*/
+/* #region Footer */
+footer{
+    height: 66vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer h4{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#copyright{
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 15px;
+}
+#copyright p a{
+    color: #71BE46;
+}
+#copyright p{
+    text-align: start;
+}
+#contacts div div{
+    margin-bottom: 15px;
+}
+#footer-bottom-content{
+    display: flex;
+    width: calc(100% - 30px);
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    height: auto;
+}
+#footer-links-bottom,
+#footer-links-top{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    height: 100%;
+}
+#footer-links-bottom a,
+#footer-links-bottom a{
+    display: block;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+#footer-links-bottom div :hover,
+#footer-links-bottom div :hover{
+    text-decoration: none;
+    border-color: white !important;
+}
+/* #contacts{
+    background-color: #77B3D4;
+} */
+#helpfulLinks{
+    background-color: #C75C5C;
+}
+#aboutShort{
+    
+}
+#footer-links-top{
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+/* #endregion */
+
+
+
+
 *{
     /* font-family: "Great Vibes"; */
     font-family: "Arkhip";
@@ -199,10 +284,18 @@ section{
     width: 100%;
     background-size: cover;
 }
+#logo-text{
+    text-decoration: none;
+    color: white;
+}
 p{
     margin: 0 !important;
     line-height: 1.2;
     text-align: center;
+}
+iframe{
+    width: 100%;
+    height: 100%;
 }
 .margin-right-0{
     margin-right: 0 !important;
@@ -210,7 +303,7 @@ p{
 .height-200{
     height: 200px;
 }
-.button>div:hover{
+.button>*:hover{
     box-shadow: 3px 3px 14px -1px black;
     cursor: pointer;
 }
@@ -232,8 +325,4 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-iframe{
-    width: 100%;
-    height: 100%;
 }

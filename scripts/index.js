@@ -7,6 +7,9 @@ $(function(){
             $('#top').removeClass("top-down");
     }
 
+    //Set copyright year
+    $('#copyright span').text(new Date().getFullYear());
+
     //rotate angle button of menu while hovering
     $('.menuAngle').add('#menuButtonInner').add('#menuButtonOuter').hover(
         () => {$('.menuAngle').css('transform', 'rotateX(180deg)');},
